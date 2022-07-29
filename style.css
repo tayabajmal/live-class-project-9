@@ -152,6 +152,10 @@ h1{
   flex-grow: 1;
 }
 
+h2{
+  color: black;
+}
+
 h4 {
   width: 70%;
   margin: 10px 0;
@@ -174,4 +178,49 @@ h4 {
 
 .faq-image{
   align-self: flex-start;
+}
+
+/*Download Section*/
+
+.download-section {
+  padding: 120px 60px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-content  span {
+  font-weight: 400;
+}
+
+.download-email {
+  width: 540px;
+  background-color: #dfdddd;
+  border-radius: 40px;
+}
+
+form {
+  display: flex;
+}
+
+form > input {
+  background-color: #dfdddd;
+  background-color: #dfdddd;
+  border: none;
+  flex-grow: 1;
+  padding: 15px 25px;
+  border-radius: 40px;
+}
+
+form > input::placeholder{
+  color: #1f1f1f;
+  font-size: 14px;
+}
+
+form > button {
+  border-radius: 40px;
+  border: none;
+  background-color: #4b4bf0;
+  padding: 15px 35px;
+  color: #ffffff;
 }
