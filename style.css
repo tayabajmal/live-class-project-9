@@ -75,3 +75,15 @@ p{
   display: flex;
   justify-content: center;
 }
+
+.companies{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.company-items{
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
