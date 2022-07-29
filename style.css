@@ -10,6 +10,7 @@
 /*HEADER SECTION*/
 
 
+
 header{
   display:flex;
   position: relative;
@@ -69,21 +70,66 @@ p{
 
 .api{
   display: flex;
+  position: relative;
+  margin-top:50px;
+  height: 400px;
+}
+
+.api-heading{
+  display: inline;
+  margin-left: 50px;
 }
 
 .cards{
   display: flex;
-  justify-content: center;
+  gap: 50px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.card-body{
+  color: black;
+}
+
+.card-active{
+  box-shadow: 5px 5px 5px 5px #888888;
+  padding: 10px;
+}
+
+.card-head-active{
+  color: #0000FF;
+  background-color: snow;
 }
 
 .companies{
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  margin-left: 50px;
 }
 
 .company-items{
   color: black;
   font-weight: bolder;
   text-decoration: none;
+}
+
+h1{
+  margin-left: 50px;
+}
+
+.blog-cards{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.blog-card{
+  display: flex;
+  justify-content: center;
+  gap:50px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  padding: 10px;
 }
