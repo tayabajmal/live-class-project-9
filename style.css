@@ -140,26 +140,38 @@ h1{
 
 /*FAQ SECTION*/
 
-.faq-section{
+.faq-section {
+  padding: 0 0 0 60px;
   display: flex;
   align-items: center;
-  background-color:#bec7f2;
-  color: black;
-  margin-top: 100px;
-  gap: 250px;
+  background-color: #dfdddd;
+  height: 324px;
 }
 
-.faq-content{
-  margin-left: 50px;
+.faq-content {
+  flex-grow: 1;
 }
 
-button{
+h4 {
+  width: 70%;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.faq-section h2 {
+  line-height: 45px;
+  margin: 20px 0;
+}
+
+.faq-content > button {
+  color: #ffffff;
   background-color: #4b4bf0;
-  color: white;
-  padding: 2px 20px 2px 20px;
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
 }
 
-h2{
-  color: black;
+.faq-image{
+  align-self: flex-start;
 }
