@@ -4,7 +4,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
- /* border: 2px solid red;*/
+  /*border: 2px solid red;*/
 }
 
 /*HEADER SECTION*/
@@ -123,13 +123,43 @@ h1{
 .blog-cards{
   display: flex;
   gap: 50px;
-  justify-content: center;
+  justify-content: flex-start
 }
 
-.blog-card{
+.blog-card {
   display: flex;
-  justify-content: center;
-  gap:50px;
-  box-shadow: 5px 5px 5px 5px #888888;
-  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 287px;
+  border-radius: 50px 10px 10px 20px;
+  padding-right: 10px;
+}
+
+.blog-content{
+  order: 3;
+}
+
+/*FAQ SECTION*/
+
+.faq-section{
+  display: flex;
+  align-items: center;
+  background-color:#bec7f2;
+  color: black;
+  margin-top: 100px;
+  gap: 250px;
+}
+
+.faq-content{
+  margin-left: 50px;
+}
+
+button{
+  background-color: #4b4bf0;
+  color: white;
+  padding: 2px 20px 2px 20px;
+  border: none;
+}
+
+h2{
+  color: black;
 }
