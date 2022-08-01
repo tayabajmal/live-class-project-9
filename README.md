@@ -17,5 +17,5 @@ Time to finish this project : 8 hours.
 COMING SOON
 
 
-[Live-class-project-9](https://img.shields.io/badge/JS%20Bootcamp-live--class--project--9-lightgrey)
+![Live-class-project-9](https://img.shields.io/badge/JS%20Bootcamp-live--class--project--9-lightgrey)
 
