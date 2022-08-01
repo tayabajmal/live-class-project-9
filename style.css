@@ -4,160 +4,153 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+  margin: 0;
+  padding: 0;
 }
 
 /*HEADER SECTION*/
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
-  padding: 30px 60px 0 60px;
-  box-sizing: border-box;
-  background-color: #4b4bf0;
+header{
+  height: 500px;
+  background-color: #3400ff;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 25px;
-  align-items: flex-start;
-  color: #ffffff;
+nav{
+  float: right;
+  margin-right: 40px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
-.nav-item {
-  margin-top: 4px;
+.nav-item{
+  margin-right: 20px;
+  color: #fff;
 }
 
-.nav-item-active {
-  background-color: #ffffff;
-  color: #1f1f1f;
-  padding: 5px 10px;
-  border-radius: 3px;
-  align-self: flex-start;
+.nav-item-active{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #5a31fc;
+  margin-right: 20px;
+  font-weight: 400;
 }
 
-nav > svg {
-  padding-top: 4px;
+.logo{
+  margin: 20px;
 }
 
-.header-text {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  color: #ffffff;
+.header-text{
+  color: #fff;
+  margin-left: 60px;
+  margin-top: 50px;
+  float:left;
 }
 
-h2 {
-  font-size: 46px;
-}
+.header-image{
+  float: right;
 
-.header-image {
-  position: absolute;
-  top: 100px;
-  right: 0;
 }
 
 /* API Section*/
 
-.api {
-  padding: 30px 60px 0 60px;
-  background-color: #f1f1f1;
-}
-
-.api-heading {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.cards {
-  display: flex;
-  padding: 30px 0;
-  justify-content: space-between;
-}
-
-.card-active {
-  padding: 30px 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.card {
-  padding: 30px 20px;
-}
-
-.card:last-child {
-  position: relative;
-  margin-right: 20px;
-}
-
-.card:last-child::after {
-  content: url(./images/forward.svg);
-  position: absolute;
-  right: -50px;
-  top: 35%;
-  border: 1px solid #ffffff;
-  padding: 10px 10px 5px 12px;
-  border-radius: 100%;
-  background-color: #4b4bf0;
-}
-
-
-
-/*API Section end */
-
-.card-body{
-  color: black;
-}
-
-.card-active{
-  box-shadow: 5px 5px 5px 5px #888888;
-  padding: 10px;
-}
-
-.card-head-active{
-  color: #0000FF;
-  background-color: snow;
-}
-
 .companies{
-  display: flex;
-  gap: 20px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .company-items{
-  color: black;
-  font-weight: bolder;
   text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin-left: 30px;
 }
 
+.api-heading{
+  font-weight: 800;
+  margin-left: 90px;
+  margin-top: 100px;
+  font-style: bold;
+}
+
+.cards{
+  margin-left: 90px;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 10px;
+  }
+
+  .card{
+    width: 20%;
+    height: 250px;
+    background-color:#fff;
+    margin-right: 30px;
+  }
+
+.card-active{
+  width: 20%;
+  height: 250px;
+  background-color: transparent;
+  margin-right: 30px;
+  box-shadow:0px 5px 15px #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-logo{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card-head-active{
+  color: black;
+  margin-left: 30px;
+}
+
+.card-body{
+  color: black;
+  font-size: small;
+  margin-left:30px;
+}
+
+/*BLOG SECTION*/
+
 h1{
-  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.blog-heading{
+  margin-left: 90px;
 }
 
 .blog-cards{
+  margin-left: 90px;
   display: flex;
   gap: 50px;
-  justify-content: flex-start
+  margin-top: 50px;
+  /*flex-direction: row;*/
 }
 
-.blog-card {
+.blog-card{
+  height: 300px;
+  width: 40%;
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 287px;
-  border-radius: 50px 10px 10px 20px;
-  padding-right: 10px;
+  gap: 20px;
+  box-shadow:0px 5px 15px #000;
+  padding: 20px;
+
+}
+
+.blog-author{
+  order: 1;
 }
 
 .blog-content{
-  order: 3;
+  display: flex;
+  flex-direction: column;
+  order: 4;
+  align-items: flex-start;
 }
 
 /*FAQ SECTION*/
@@ -166,16 +159,17 @@ h1{
   padding: 0 0 0 60px;
   display: flex;
   align-items: center;
-  background-color: #dfdddd;
+  background-color: #E6E6FA;
   height: 324px;
+  margin-top: 50px;
 }
 
 .faq-content {
   flex-grow: 1;
 }
 
-h2{
-  color: black;
+.header-text h2{
+  color: white;
 }
 
 h4 {
@@ -199,7 +193,7 @@ h4 {
 }
 
 .faq-image{
-  align-self: flex-start;
+  margin-right: 250px;
 }
 
 /*Download Section*/
